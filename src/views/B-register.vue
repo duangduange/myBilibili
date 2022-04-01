@@ -20,23 +20,23 @@
       label="账号"
       placeholder="请输入账号"
       rule="^.{6,16}$"
-      @collectDatas="res => name = res"
+      @collectDatas="res => username = res"
     />
     <login-text
       label="密码"
       placeholder="请输入密码"
       rule="^.{6,16}$"
       type="password"
-      @collectDatas="res => name = res"
+      @collectDatas="res => password = res"
     />
     <login-btn btntext="注册" @registerSubmit="registerSubmit"/>
   </div>
 </template>
 
 <script>
-import LoginTop from '@/components/common/LoginTop.vue'
-import LoginText from '@/components/common/LoginText.vue'
-import LoginBtn from '@/components/common/LoginBtn.vue'
+import LoginTop from '@/components/common/LoginTop'
+import LoginText from '@/components/common/LoginText'
+import LoginBtn from '@/components/common/LoginBtn'
 export default {
   components: {
     LoginTop,
@@ -52,14 +52,22 @@ export default {
   },
   methods: {
     registerSubmit () {
-      alert('由于国家网络安全审查,暂时停止开放注册,感谢您的谅解！')
-      // if (this.name && this.username && this.password) {
-      //   this.$http.post('/register', {//发送axios请求
-      //     name: this.name,
-      //     username: this.username,
-      //     password: this.password
-      //   })
-      // }
+      // alert('由于国家网络安全审查,暂时停止开放注册,感谢您的谅解！')
+      if (this.name && this.username && this.password) {
+        this.$toast.success('注册成功')
+        setTimeout(() => {
+          this.$router.push('/info')
+        }, 1000)
+
+        // 发送axios请求
+        // this.$http.post('/register', {
+        //   name: this.name,
+        //   username: this.username,
+        //   password: this.password
+        // })
+      } else {
+        this.$toast.fail('请输入6位以上账号信息')
+      }
     }
   }
 }

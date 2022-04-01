@@ -14,32 +14,44 @@
       style="margin: 4.167vw 0"
       placeholder="请输入账号"
       rule="^.{6,16}$"
-      @collectDatas="res => name = res"
+      @collectDatas="res => model.username = res"
     />
     <login-text
       label="密码"
       placeholder="请输入密码"
       rule="^.{6,16}$"
       type="password"
-      @collectDatas="res => name = res"
+      @collectDatas="res => model.password = res"
     />
     <login-btn btntext="登录" @registerSubmit="registerSubmit"/>
   </div>
 </template>
 
 <script>
-import LoginTop from '@/components/common/LoginTop.vue'
-import LoginText from '@/components/common/LoginText.vue'
-import LoginBtn from '@/components/common/LoginBtn.vue'
+import LoginTop from '@/components/common/LoginTop'
+import LoginText from '@/components/common/LoginText'
+import LoginBtn from '@/components/common/LoginBtn'
 export default {
   components: {
     LoginTop,
     LoginText,
     LoginBtn
   },
+  data () {
+    return {
+      model: {} // 记录输入信息
+    }
+  },
   methods: {
     registerSubmit () {
-      // 么得请求
+      if (this.model.username && this.model.password) {
+        this.$toast.success('登录成功')
+        setTimeout(() => {
+          this.$router.push('/info')
+        }, 1000)
+      } else {
+        this.$toast.fail('请填写正确账号信息')
+      }
     }
   }
 }

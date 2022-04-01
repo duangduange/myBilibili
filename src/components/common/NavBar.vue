@@ -11,7 +11,7 @@
       </p>
     </div>
     <div>
-      <img src="../../assets/default_img.jpg" alt="">
+      <img src="../../assets/fifoo_head.png" alt="">
       <p>下载App</p>
     </div>
   </div>
@@ -33,7 +33,8 @@ export default {
     justify-content: center;
     align-items: center;
     img {
-      width: 100%;
+      width: 85%;
+      height: 85%;
     }
   }
   div:nth-child(2) {
@@ -70,7 +71,7 @@ export default {
       background-color: #fb7299;
       color: white;
       font-size: 13px;
-      border-radius: 3px;
+      border-radius: 6px;
     }
   }
 }
