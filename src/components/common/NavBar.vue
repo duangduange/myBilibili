@@ -2,7 +2,7 @@
   <!-- 中间搜索框使用响应式布局,两边图标固定大小 -->
   <div class="navbar">
     <div>
-      <img src="../../assets/logo.png" alt="">
+      <img src="../../assets/logo.png" @click="turnto? $router.push('/info'): $router.push('/')">
     </div>
     <div>
       <p>
@@ -11,7 +11,7 @@
       </p>
     </div>
     <div>
-      <img src="../../assets/fifoo_head.png" alt="">
+      <img src="../../assets/fifoo.jpg" @click="$router.push('/info')">
       <p>下载App</p>
     </div>
   </div>
@@ -19,11 +19,19 @@
 
 <script>
 export default {
+  props: [
+    'turnto'
+  ]
 }
 </script>
 
 <style scoped lang="less">
 .navbar {
+  // 固定顶部
+  position: sticky;
+  top: 0;
+  z-index: 9;
+
   height: 45px;
   background-color: white;
   display: flex;
@@ -64,6 +72,7 @@ export default {
     img {
       width: 24px;
       height: 24px;
+      border-radius: 50%;
     }
     p {
       padding: 5px 10px;

@@ -3,6 +3,12 @@
   *参照视频教学地址：*
   https://www.bilibili.com/video/BV1vT4y137So?p=2&spm_id_from=pageDriver
 
+## #4 布局主页、视频页 2022/4/2
+
+  - 标签栏滑动换栏
+  - 懒加载填充内容标签
+  - 用浏览器自带播放器
+
 ## #3 完善用户主页布局，补充各页面跳转功能 2022/4/1
 
   - github远程仓库分支master合并到main

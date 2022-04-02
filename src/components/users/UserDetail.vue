@@ -58,7 +58,7 @@ export default {
   }
   .profile {
     flex: 1;
-    margin: 10px 0;
+    margin: 2.778vw 0;
     div:nth-child(1) {
       display: flex;
       p {
@@ -69,13 +69,13 @@ export default {
 
         // 让标签内容纵向排列
         flex-direction: column;
-        font-size: 13px;
+        font-size: 3.611vw;
       }
       p:nth-child(1), p:nth-child(2) {
         border-right: 1px solid #aaa;
       }
       .userdata {
-        font-size: 14px;
+        font-size: 3.889vw;
         color: #666;
       }
     }
@@ -83,10 +83,10 @@ export default {
     // 编辑资料按钮
     .editbtn {
       flex: 1;
-      padding: 5px 0;
-      margin: 6px 20px 0 20px;
+      padding: 1.389vw 0;
+      margin: 1.667vw 5.556vw 0 5.556vw;
       border: 1px solid #fb7a9f;
-      border-radius: 6px;
+      border-radius: 1.667vw;
       display: flex;
       justify-content: center;
       align-items: center;

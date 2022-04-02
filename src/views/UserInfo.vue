@@ -1,6 +1,6 @@
 <template>
   <div class="info">
-    <nav-bar />
+    <nav-bar :turnto="0" />
     <img src="@/assets/bannerTop_new.png" alt="" class="bg">
     <user-detail />
   </div>
