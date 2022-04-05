@@ -55,6 +55,7 @@ export default {
     width: 85px;
     height: 85px;
     border-radius: 50%;
+    transform: translateY(-10px) scale(1.1) // 头像突出效果
   }
   .profile {
     flex: 1;

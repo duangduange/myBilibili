@@ -1,6 +1,6 @@
 <template>
   <div class="edit" v-if="model">
-    <nav-bar style="margin-bottom: 2.778vw" :turnto="1"></nav-bar>
+    <nav-bar style="margin-bottom: 8.333vw" :turnto="1"></nav-bar>
     <div class="uploadimg">
       <!-- 插槽上传图片 -->
       <van-uploader class="port" :after-read="afterRead" preview-size="100vw"/>

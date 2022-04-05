@@ -1,12 +1,16 @@
 ><template>
   <div id="app">
+    <ad-box />
     <router-view />
   </div>
 </template>
 
 <script>
+import AdBox from '@/components/common/AdBox'
 export default {
-
+  components: {
+    AdBox
+  }
 }
 </script>
 

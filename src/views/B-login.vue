@@ -4,7 +4,7 @@
     <login-top middleTop="登录bilibili">
       <!-- 使用插槽 -->
       <template v-slot:right>
-        <div style="font-size: 3.611vw" @click="$router.push('/register')">
+        <div style="font-size: 3.611vw; color: #666;" @click="$router.push('/register')">
           注册
         </div>
       </template>
