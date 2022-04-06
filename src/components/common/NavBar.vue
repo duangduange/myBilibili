@@ -41,8 +41,8 @@ export default {
     justify-content: center;
     align-items: center;
     img {
-      width: 85%;
-      height: 85%;
+      width: 50%;
+      height: 88%;
     }
   }
   div:nth-child(2) {
