@@ -68,7 +68,7 @@ export default {
     border-radius: 8px;
     background-color: #ddd;
     font-size: 10px;
-    color: #fb7299;
+    color: #a6c1ee;
   }
   .arr {
     float: right;

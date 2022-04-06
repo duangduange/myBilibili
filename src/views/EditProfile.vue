@@ -92,9 +92,9 @@ export default {
   p {
     margin: 5.556vw;
     padding: 1.389vw 2.778vw;
-    border: 0.278vw solid #fb7299;
+    border: 0.278vw solid #a6c1ee;
     border-radius: 1.667vw;
-    color: #fb7299;
+    color: #a6c1ee;
     font-size: 5.556vw;
     font-weight: bold;
   }

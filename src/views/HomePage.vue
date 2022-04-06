@@ -4,7 +4,7 @@
     <nav-bar :turnto="1"></nav-bar>
 
     <!-- 标签栏中插入文章组件 -->
-    <van-tabs v-model="active" title-active-color="#fb7299" line-height="1px" line-width="25px" swipeable animated>
+    <van-tabs v-model="active" title-active-color="#a6c1ee" line-height="1px" line-width="25px" swipeable animated>
       <van-tab v-for="(item, index) in category" :key="index" :title="item">
         <articles />
         <articles />

@@ -86,12 +86,12 @@ export default {
       flex: 1;
       padding: 1.389vw 0;
       margin: 1.667vw 5.556vw 0 5.556vw;
-      border: 1px solid #fb7a9f;
+      border: 1px solid #a6c1ee;
       border-radius: 1.667vw;
       display: flex;
       justify-content: center;
       align-items: center;
-      color: #fb7a9f;
+      color: #a6c1ee;
     }
   }
 

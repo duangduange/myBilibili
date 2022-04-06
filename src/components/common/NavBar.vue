@@ -41,8 +41,8 @@ export default {
     justify-content: center;
     align-items: center;
     img {
-      width: 50%;
-      height: 88%;
+      width: 45%;
+      height: 100%;
     }
   }
   div:nth-child(2) {
@@ -77,7 +77,7 @@ export default {
     p {
       padding: 5px 10px;
       margin: 0 10px;
-      background-color: #fb7299;
+      background-color: #a6c1ee;
       color: white;
       font-size: 13px;
       border-radius: 6px;

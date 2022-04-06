@@ -1,16 +1,16 @@
 <template>
   <div class="articles">
     <!-- 懒加载本地图片无果 -->
-    <div class="container"><img v-lazy="require('../../assets/art1.png')"></div>
-    <div class="container"><img v-lazy="require('../../assets/art2.png')"></div>
-    <div class="container"><img v-lazy="require('../../assets/art3.png')"></div>
-    <div class="container"><img v-lazy="require('../../assets/art4.png')"></div>
-    <div class="container"><img v-lazy="require('../../assets/art5.png')"></div>
-    <div class="container"><img v-lazy="require('../../assets/art6.png')"></div>
-    <div class="container"><img v-lazy="require('../../assets/art7.png')"></div>
-    <div class="container"><img v-lazy="require('../../assets/art8.png')"></div>
-    <div class="container"><img v-lazy="require('../../assets/art9.png')"></div>
-    <div class="container"><img v-lazy="require('../../assets/art10.png')"></div>
+    <div class="container" @click="$router.push('/article')"><img v-lazy="require('../../assets/art1.png')"></div>
+    <div class="container" @click="$router.push('/article')"><img v-lazy="require('../../assets/art2.png')"></div>
+    <div class="container" @click="$router.push('/article')"><img v-lazy="require('../../assets/art3.png')"></div>
+    <div class="container" @click="$router.push('/article')"><img v-lazy="require('../../assets/art4.png')"></div>
+    <div class="container" @click="$router.push('/article')"><img v-lazy="require('../../assets/art5.png')"></div>
+    <div class="container" @click="$router.push('/article')"><img v-lazy="require('../../assets/art6.png')"></div>
+    <div class="container" @click="$router.push('/article')"><img v-lazy="require('../../assets/art7.png')"></div>
+    <div class="container" @click="$router.push('/article')"><img v-lazy="require('../../assets/art8.png')"></div>
+    <div class="container" @click="$router.push('/article')"><img v-lazy="require('../../assets/art9.png')"></div>
+    <div class="container" @click="$router.push('/article')"><img v-lazy="require('../../assets/art10.png')"></div>
     <!-- <img v-for="item in itemList" v-lazy="require('')" :key="item.id" /> -->
   </div>
 </template>

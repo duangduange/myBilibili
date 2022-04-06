@@ -21,7 +21,7 @@ export default {
 }
 .loginbtn {
   height: 12.5vw;
-  background-color: #ff9db5;
+  background-color: #a6c1ee;
   color: white;
   display: flex;
   justify-content: center;
