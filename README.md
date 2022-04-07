@@ -3,10 +3,11 @@
   *参照视频教学地址：*
   https://www.bilibili.com/video/BV1vT4y137So?p=2&spm_id_from=pageDriver
 
-## #6 效果改造 2022/4/6
+## #6 效果改造 2022/4/7
 
   - 换头
   - 换皮
+  - 修改部分标题文本
 
 ## #5 布局主页、视频页 2022/4/5
 

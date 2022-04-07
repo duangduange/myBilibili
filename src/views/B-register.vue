@@ -1,7 +1,7 @@
 <template>
   <div class="register">
     <!-- 传标题字符串，不需要加 : -->
-    <login-top middleTop="注册bilibili">
+    <login-top middleTop="账号☆注册">
       <!-- 使用插槽 -->
       <template v-slot:right>
         <div style="font-size: 3.611vw; color: #666;" @click="$router.push('/login')">
